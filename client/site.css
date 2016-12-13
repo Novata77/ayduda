@@ -1,0 +1,122 @@
+body{
+background: gainsboro;
+}
+.mainWallStyles{
+	
+}
+.maintemplate{
+	margin: auto;
+	text-align:center;
+	border: 5px solid darkcyan;
+}
+.chatSendMessages{
+	margin: auto;
+	border: 5px solid saddlebrown;
+	width:60%;
+}
+.chatSendMessages input{
+	width: 100%;
+	font-size:20px;
+	padding:20px;
+	border-radius:20px;
+	border: 5px solid turquoise;
+}
+.chatSendMessages input:hover{
+	border: 5px solid darkorchid;
+		
+}
+.panelStyles{
+	opacity:0.8;
+	top: -5px;
+    height: 400px;
+    width: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3px;
+    position: relative;
+    margin: auto;
+	border: 5px solid deeppink;
+}
+
+.panelLogin{
+	opacity:0.8;
+	top: -5px;
+    height: 400px;
+    width: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3px;
+    position: relative;
+    margin: auto;
+	border: 5px solid deeppink;
+}
+
+div.panel.panel-info{
+	top: 2000px;
+}
+.background{
+	background:url("/img/fondo20.jpg");
+	height: 700px;
+	border: 5px solid deeppink;
+	
+}
+.mainChatStyles{
+	margin: auto;
+	width:60%;
+	max-height:800px;
+	overflow:scroll;
+	border: 5px solid firebrick;
+}
+.list-group-item{
+	margin-top:10px;
+	border-radius:10px;
+	opacity:0.9;
+	border: 5px solid indigo;
+}
+.navbar navbar-default{
+	border: 5px solid navy;
+}
+
+                        
+.main-principal {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.1);
+    height: 700px;
+    background:url("/img/home.jpg");
+}
+
+  .details-detalles {
+        position: relative;
+        top: 10px;
+        text-align: center;
+    /*border: 3px solid green;*/
+    margin: center;
+   
+    }
+.details-detalles h4.title-titulo {
+	
+      color: lightcyan;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+	font-weight: lighter;
+	font-size: 30px;
+}
+
+.details-detalles h5.description-descripsion {
+	 
+     color: lightcyan;
+    margin: 10px 0 0 0;
+    text-align: center;
+    line-height: 21px;
+	font-size: 20px;
+	font-weight: lighter;
+	
+}

@@ -1,0 +1,90 @@
+<template name="mainWall">
+	<ul class="mainWallStyles">
+		<li>
+			{{>mainWallForm}}
+		</li>
+		<li>
+			{{>mainWallLoadMsn}}
+		</li>
+	</ul>
+</template>
+<template name="mainWallForm">
+	<form action="" method="POST" role="form" id="mainForm">
+		<legend>Mural</legend>
+		<div class="form-group">
+			<textarea name="message" id="input" class="form-control" rows="3" required="required" placeholder="¿Que estas pensando?"></textarea>
+		</div>
+	
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</form>
+</template>
+<template name="mainWallLoadMsn">
+	{{# if isReady}}
+		<ul>
+		{{#each items}}
+			<li>{{>ArticlesView}}</li>
+		{{/each}}
+		</ul>		
+	{{else}}
+		<b>LOADING...</b>
+	{{/if}}
+</template>
+<template name="ArticlesView">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<ul>
+				<li>
+					<span class="badge">
+						{{date}}
+					</span>
+					<div class="userNameStyles">
+						Ditmar David
+					</div>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</li>
+				<li>
+					{{msn}}		
+				</li>
+				<li>
+					<ul>
+						<li>
+							<a href=""><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Me gusta</a>
+						</li>
+						<li>
+							<a href="/main?id={{_id}}" id="comentBtn"> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Comentar </a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			{{#if showCommets}}
+			<div class="comments">
+				{{>mainWallCommentForm}}	
+			</div>
+			{{/if}}
+		</div>
+	</div>
+</template>
+<template name="mainWallCommentForm">
+	<form action="" method="POST" role="form" id="mainCommentForm">
+		<legend>Comentar</legend>
+		<div class="form-group">
+			<textarea name="comment" id="input" class="form-control" rows="2" required="required"></textarea>
+		</div>
+	
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</form>
+	List <br/>
+	{{#if ready}}
+		{{#each listCommnets}}
+			<ul>{{>itemsComments}}</ul>
+		{{/each}}
+	{{else}}
+		<b>Cargando...</b>
+	{{/if}}
+	
+</template>
+<template name="itemsComments">
+	<li>
+		{{msn}}
+	</li>
+</template>

@@ -1,0 +1,49 @@
+<template name="forms">
+<div class="main-principal">
+         <div class="details-detalles">
+                    
+					<h4 class="title-titulo">RED SOCIAL UNIVERSITARIA<i>!</i></h4>
+                     <h4 class="title-titulo">Bienvenidos a la RED ACADEMICA<i>!</i></h4>
+                    <h5 class="description-descripsion">
+						Conéctate con tus amigos y otras personas de tu universidad. 
+Podras conversar, subir archivos y hacer amigos dentro de la red social Universitaria.
+ Mira lo que publican tus amigos  dale un me gusta o comenta, en tiempo real, desde todos los ángulos..</h5>
+                    <br>
+                </div>
+            
+<div class="panelStyles">
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">EMPIEZA YA...</h3>
+		</div>
+		<div class="panel-body">
+			<form action="" method="POST" role="form">
+				<legend>Registro</legend>
+			
+				<div class="form-group">
+					<label for="">Nombre</label>
+					<input type="text" class="form-control" id="nombreID" placeholder="nombre">
+				<label for="">Apellido</label>
+					<input type="text" class="form-control" id="apellidoID" placeholder="apellido">
+						
+					<label for="">Email</label>
+					<input type="email" class="form-control" id="emailID" placeholder="email@email.com">
+					<label for="">Password</label>
+					<input type="password" class="form-control" id="passwordID" placeholder="Password">
+					<label for="">Re. Password</label>
+					<input type="password" class="form-control" id="repasswordID" placeholder="Re. Password">
+					
+				</div>
+				<button type="submit" class="btn btn-primary" id="registrarID">Enviar</button>
+				 <ul class="nav navbar-nav navbar-right">
+						<li><a href="{{pathFor 'login'}}">ya tiene cuenta?.</a></li>
+						
+					</ul>
+				</form>
+			</div>
+		</div>	
+	</div>
+       
+    </div>		
+
+</template>
